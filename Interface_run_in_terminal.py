@@ -186,7 +186,7 @@ test_accuracy = accuracy_score(Y_test, y_pred)
 with open('knn_model2.p','rb') as f2:
     loaded_model = pickle.load(f2)
 st.header('Home Equity Line of Credit Risk Evaluator')
-st.text("Our interface is tailored to aid banks in assessing a client's Home Equity Line of Credit (HELOC).\nUsers can effortlessly input application profile values for each feature. By considering the weighting assigned to each feature, the interface generates a corresponding risk level comment.\nThis functionality empowers banks to gauge the likelihood of an application being low or high-risk, enabling them to make well-informed decisions regarding application approval.")
+st.text("Our interface is tailored to aid banks in assessing a client's Home Equity Line of Credit\n(HELOC).Users can effortlessly input application profile values for each feature. By considering the\nweighting assigned to each feature, the interface generates a corresponding risk level comment.\nThis functionality empowers banks to gauge the likelihood of an application being low or\nhigh-risk, enabling them to make well-informed decisions regarding application approval.")
 
 
 
