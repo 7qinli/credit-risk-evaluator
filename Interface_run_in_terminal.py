@@ -190,6 +190,10 @@ st.text("Our interface is tailored to aid banks in assessing a client's Home Equ
 
 
 
+import streamlit as st
+
+
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 
 
