@@ -189,7 +189,7 @@ st.header('Home Equity Line of Credit Risk Evaluator')
 st.text("Our interface is tailored to aid banks in assessing a client's Home Equity Line of Credit\n(HELOC).\n\nUsers can effortlessly input application profile values for each feature.By considering\nthe weighting assigned to each feature, the interface generates a corresponding risk level\ncomment.\n\nThis functionality empowers banks to gauge the likelihood of an application being low or\nhigh-risk, enabling them to make well-informed decisions regarding application approval.\n\nDesigned by Lucy")
 
 
-st.header('Your application Profile')
+st.header('Your Application Profile')
 
 
 # In[ ]:
@@ -267,6 +267,8 @@ input_value = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x1
 prediction = loaded_model.predict_proba([input_value])[0]
 
 
+
+st.header('Credit Risk Evaluation Result:')
 if prediction[0] > prediction[1]:
     st.text('This application has a %.2f%% probability to be low risk.' % (prediction[0]*100))
 else:
